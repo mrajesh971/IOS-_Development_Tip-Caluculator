@@ -7,9 +7,10 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main() {
+    int x = 0<<4;
+    cout<<x;
     return 0;
 }
