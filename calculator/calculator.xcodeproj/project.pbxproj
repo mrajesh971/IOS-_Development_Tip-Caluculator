@@ -14,6 +14,7 @@
 		14B9ABB21E6FF8830068DB79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14B9ABB01E6FF8830068DB79 /* LaunchScreen.storyboard */; };
 		14B9ABBD1E6FF8830068DB79 /* calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9ABBC1E6FF8830068DB79 /* calculatorTests.swift */; };
 		14B9ABC81E6FF8830068DB79 /* calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9ABC71E6FF8830068DB79 /* calculatorUITests.swift */; };
+		14B9ABD61E7281850068DB79 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B9ABD51E7281850068DB79 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		14B9ABC31E6FF8830068DB79 /* calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B9ABC71E6FF8830068DB79 /* calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatorUITests.swift; sourceTree = "<group>"; };
 		14B9ABC91E6FF8830068DB79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B9ABD51E7281850068DB79 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				14B9ABA71E6FF8830068DB79 /* AppDelegate.swift */,
 				14B9ABA91E6FF8830068DB79 /* ViewController.swift */,
 				14B9ABAB1E6FF8830068DB79 /* Main.storyboard */,
+				14B9ABD51E7281850068DB79 /* SettingsViewController.swift */,
 				14B9ABAE1E6FF8830068DB79 /* Assets.xcassets */,
 				14B9ABB01E6FF8830068DB79 /* LaunchScreen.storyboard */,
 				14B9ABB31E6FF8830068DB79 /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					14B9ABA31E6FF8820068DB79 = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 7QZXPU4F5L;
 						ProvisioningStyle = Automatic;
 					};
 					14B9ABB71E6FF8830068DB79 = {
@@ -261,6 +265,7 @@
 			files = (
 				14B9ABAA1E6FF8830068DB79 /* ViewController.swift in Sources */,
 				14B9ABA81E6FF8830068DB79 /* AppDelegate.swift in Sources */,
+				14B9ABD61E7281850068DB79 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -400,7 +405,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -412,7 +417,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7QZXPU4F5L;
 				INFOPLIST_FILE = calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hai.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7QZXPU4F5L;
 				INFOPLIST_FILE = calculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hai.calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";

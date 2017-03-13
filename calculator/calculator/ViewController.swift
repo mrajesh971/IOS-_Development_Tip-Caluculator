@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var BillLabel: UITextField!
     @IBOutlet weak var TipLabel: UILabel!
     @IBOutlet weak var TotalLabel: UILabel!
+    
+    var roundingSetting = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,8 +26,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let defaults = UserDefaults.standard
+        let percentSetting = defaults.integer(forKey: "tip_percent")
+        tipcontrol.selectedSegmentIndex = percentSetting
+        //self.roundingSetting = defaults.integer(forKey: "rounding")
+        self.CaluculateTip(self)
+    }
+  
 
-    @IBAction func Onaip(_ sender: Any) {
+    @IBAction func onTap(_ sender: Any) {
        view.endEditing(true)
     }
 
@@ -38,5 +49,12 @@ class ViewController: UIViewController {
         TipLabel.text = String(format : "$%.2f" , tip)
         TotalLabel.text = String(format : "$%.2f" , total)
     }
+   /* override func viewWillDisappear(_ animated: Bool) {
+        
+        let defaults = UserDefaults.standard
+        defaults.set(Int(tipcontrol.selectedSegmentIndex),forKey: "tip_percent")
+        defaults.synchronize()
+        
+    }*/
 }
 
