@@ -1,5 +1,5 @@
 # IOS_Development_Tip_Caluculator
-IOS tip calculator(Tippy Calci)
+IOS tip calculator
 
 Tippy Calci is a basic tip calculator application for iOS.
 
@@ -7,7 +7,7 @@ Submitted by: Rajesh Madira
 
 Time spent:
 
-12 hours spent in total
+4 hours spent in total
 
 User Stories
 
